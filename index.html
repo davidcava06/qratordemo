@@ -16,8 +16,8 @@
 			</h2>
 	</nav>	
 	<div class="vimeo-wrapper">
-		<iframe src="https://player.vimeo.com/video/237003313/"
-			frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay"></iframe>
+		<iframe src="https://player.vimeo.com/video/237003313" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay; encrypted-media"></iframe>
+
 		<script src="https://player.vimeo.com/api/player.js"></script>
 		<script>
 			var iframe = document.querySelector('iframe');
@@ -25,10 +25,6 @@
 		
 			player.on('play', function() {
 				console.log('played the video!');
-			});
-		
-			player.getVideoTitle().then(function(title) {
-				console.log('title:', title);
 			});
 		</script>
 	</div>
