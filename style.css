@@ -1,6 +1,16 @@
 /* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+@-ms-viewport{
+	width: device-width;
+  }
 body {
 	font-family: "Open Sans", sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+h2 {
+	color: #eae1bb;
+	font-: 
 }
