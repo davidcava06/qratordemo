@@ -16,14 +16,20 @@
 				</a>
 			</h2>
 	</nav>	
-	<div class="vimeo-wrapper">
-		<iframe src="https://player.vimeo.com/video/237003313?autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-		<script src="https://player.vimeo.com/api/player.js"></script>
-		<script>
-			var iframe = document.querySelector('iframe');
-			var player = new Vimeo.Player(iframe);
-			player.play();
-		</script>
-	</div>
+	<div id="vimeo-wrapper" class="vimeo-wrapper"></div>
+	<script src="https://player.vimeo.com/api/player.js"></script>
+	<script>
+		var options = {
+			id:237003313,
+			loop: true,
+			autoplay: true,
+			muted: true
+		};
+		var player = new Vimeo.Player('vimeo-wrapper', options);
+		player.setVolume(0);
+		player.on('play', function(){
+			console.log('played video!');
+		});
+	</script>
 </body>
 </html>
