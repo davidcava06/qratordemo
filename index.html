@@ -17,15 +17,12 @@
 			</h2>
 	</nav>	
 	<div class="vimeo-wrapper">
-		<iframe src="https://player.vimeo.com/video/237003313?api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay=true></iframe>
+		<iframe src="https://player.vimeo.com/video/237003313?autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		<script src="https://player.vimeo.com/api/player.js"></script>
 		<script>
 			var iframe = document.querySelector('iframe');
 			var player = new Vimeo.Player(iframe);
-		
-			player.on('play', function() {
-				console.log('played the video!');
-			});
+			player.play();
 		</script>
 	</div>
 </body>
