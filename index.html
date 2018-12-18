@@ -9,20 +9,19 @@
 </head>
 <body>
 	<nav id="title" role="navigation" class="navbar-fixed-top">
-			<h2 class="site-title">
+			<div class="site-title">
 				<a href="http://linotagliapietra.com">
 					<span class="hidden">Lino Tagliapietra</span>
 					<img class="logo" src="static/img/lino-logo.png" , alt="LINO TAGLIAPIETRA">
 				</a>
-			</h2>
+			</div>
 	</nav>	
 	<div id="vimeo-wrapper" class="vimeo-wrapper"></div>
 	<script src="https://player.vimeo.com/api/player.js"></script>
 	<script>
 		var options = {
 			id:237003313,
-			loop: true,
-			autoplay: true,
+			background: true,
 			muted: true
 		};
 		var player = new Vimeo.Player('vimeo-wrapper', options);
