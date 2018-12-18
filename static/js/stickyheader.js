@@ -1,7 +1,10 @@
 jQuery(document).ready(function() {
     
     var navOffset = jQuery("nav").offset().top;
-    jQuery("nav").wrapInner('<div class="nav-inner"></div>')
+
+    jQuery("nav").wrap('<div class="nav-placeholder"></div>');
+    jQuery(".nav-placeholder").height(jQuery("nav").outerHeight());
+    jQuery("nav").wrapInner('<div class="nav-inner"></div>');
     jQuery(window).scroll(function() {
         var scrollPos = jQuery(window).scrollTop();
 
