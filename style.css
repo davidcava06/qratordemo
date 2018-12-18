@@ -16,7 +16,14 @@ nav {
 	top: 0; /* Position the navbar at the top of the page */
 	width: 100%; /* Full width */
 	padding: 2vw;
+	overflow: hidden;
 }
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
 .navbar-fixed-top .site-title a img {
 	color: #eae1bb;
 	height: 2.2vw;
