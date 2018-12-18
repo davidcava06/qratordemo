@@ -8,45 +8,43 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<nav id="navbar" role="navigation" class="navbar-fixed-top">
-			<div class="site-title">
-				<a href="http://linotagliapietra.com">
-					<span class="hidden">Lino Tagliapietra</span>
-					<img class="logo" src="static/img/lino-logo.png" , alt="LINO TAGLIAPIETRA">
-				</a>
-			</div>
-	</nav>	
-	<div id="vimeo-wrapper" class="vimeo-wrapper"></div>
-	<script src="https://player.vimeo.com/api/player.js"></script>
+	<div id="navbar" role="navigation" class="navbar-fixed-top">
+		<div class="site-title">
+			<a href="http://linotagliapietra.com">
+				<span class="hidden">Lino Tagliapietra</span>
+				<img class="logo" src="static/img/lino-logo.png" , alt="LINO TAGLIAPIETRA">
+			</a>
+		</div>
+	</div>
+	<div class="content">
+		<div id="vimeo-wrapper" class="vimeo-wrapper"></div>
+		<script src="https://player.vimeo.com/api/player.js"></script>
+		<script>
+			var options = {
+				id:237003313,
+				background: true,
+				muted: true
+			};
+			var player = new Vimeo.Player('vimeo-wrapper', options);
+			player.setVolume(0);
+			player.on('play', function(){
+				console.log('played video!');
+			});
+		</script>
+	</div>
+	
 	<script>
-		var options = {
-			id:237003313,
-			background: true,
-			muted: true
-		};
-		var player = new Vimeo.Player('vimeo-wrapper', options);
-		player.setVolume(0);
-		player.on('play', function(){
-			console.log('played video!');
-		});
-	</script>
-	<script>
-		// When the user scrolls the page, execute myFunction 
 		window.onscroll = function() {myFunction()};
-
-		// Get the navbar
-		var navbar = document.getElementById("navbar");
-
-		// Get the offset position of the navbar
-		var sticky = navbar.offsetTop;
-
-		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		
+		var header = document.getElementById("navbar");
+		var sticky = header.offsetTop;
+		
 		function myFunction() {
-		if (window.pageYOffset >= sticky) {
-			navbar.classList.add("sticky")
-		} else {
-			navbar.classList.remove("sticky");
-		}
+			if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+			} else {
+			header.classList.remove("sticky");
+			}
 		}
 	</script>
 </body>
