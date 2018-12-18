@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 	<nav id="navbar" role="navigation" class="navbar-fixed-top">
 		<div class="site-title">
 			<a href="http://linotagliapietra.com">
@@ -17,21 +18,52 @@
 			</a>
 		</div>
 	</nav>
+
 	<div class="content">
-		<div id="vimeo-wrapper" class="vimeo-wrapper"></div>
-		<script src="https://player.vimeo.com/api/player.js"></script>
-		<script>
-			var options = {
-				id:237003313,
-				background: true,
-				muted: true
-			};
-			var player = new Vimeo.Player('vimeo-wrapper', options);
-			player.setVolume(0);
-			player.on('play', function(){
-				console.log('played video!');
-			});
-		</script>
+		<div id="s1" class="stage">
+				<div id="vimeo-wrapper1" class="vimeo-wrapper"></div>
+			</div>
+		<div id="s2" class="stage">
+			<div id="vimeo-wrapper2" class="vimeo-wrapper"></div>
+		</div>
+		<div id="s3" class="stage">
+				<div id="vimeo-wrapper3" class="vimeo-wrapper"></div>
+		</div>
 	</div>
+
+	<script src="https://player.vimeo.com/api/player.js"></script>
+	<script>
+		var options1 = {
+			id:237003313,
+			background: true,
+			muted: true
+		};
+		var options2 = {
+			id:170222743,
+			background: true,
+			muted: true
+		};
+		var options3 = {
+			id:269241515,
+			background: true,
+			muted: true
+		};
+		var player1 = new Vimeo.Player('vimeo-wrapper1', options1);
+		player1.setVolume(0);
+		player1.on('play', function(){
+			console.log('played video!');
+		});
+		var player2 = new Vimeo.Player('vimeo-wrapper2', options2);
+		player2.setVolume(0);
+		player2.on('play', function(){
+			console.log('played video 2!');
+		});
+		var player3 = new Vimeo.Player('vimeo-wrapper3', options3);
+		player3.setVolume(0);
+		player3.on('play', function(){
+			console.log('played video 3!');
+		});
+	</script>	
+	
 </body>
 </html>
