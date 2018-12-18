@@ -1,0 +1,15 @@
+jQuery(document).ready(function() {
+    
+    var navOffset = jQuery("nav").offset().top;
+    jQuery("nav").wrapInner('<div class="nav-inner"></div>')
+    jQuery(window).scroll(function() {
+        var scrollPos = jQuery(window).scrollTop();
+
+        if (scrollPos >= navOffset) {
+            jQuery("nav").addClass("fixed");
+        } else {
+            jQuery("nav").removeClass("fixed");
+        }
+    })
+    
+});

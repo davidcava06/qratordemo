@@ -4,18 +4,19 @@
 	<meta name=”viewport” content= ”width=device-width, initial-scale=1″>
 	<meta charset="UTF-8">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="static/js/stickyheader.js"></script>
 	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div id="navbar" role="navigation" class="navbar-fixed-top">
+	<nav id="navbar" role="navigation" class="navbar-fixed-top">
 		<div class="site-title">
 			<a href="http://linotagliapietra.com">
 				<span class="hidden">Lino Tagliapietra</span>
 				<img class="logo" src="static/img/lino-logo.png" , alt="LINO TAGLIAPIETRA">
 			</a>
 		</div>
-	</div>
+	</nav>
 	<div class="content">
 		<div id="vimeo-wrapper" class="vimeo-wrapper"></div>
 		<script src="https://player.vimeo.com/api/player.js"></script>
@@ -32,20 +33,5 @@
 			});
 		</script>
 	</div>
-	
-	<script>
-		window.onscroll = function() {myFunction()};
-		
-		var header = document.getElementById("navbar");
-		var sticky = header.offsetTop;
-		
-		function myFunction() {
-			if (window.pageYOffset > sticky) {
-			header.classList.add("sticky");
-			} else {
-			header.classList.remove("sticky");
-			}
-		}
-	</script>
 </body>
 </html>
