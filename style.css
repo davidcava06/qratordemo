@@ -101,6 +101,9 @@ a {
  }
 
 /* Sliding text formatting */
+#t3 {
+	top: -36vw;
+ }
  .content-wrapper {
 	position: relative;
 	text-align: right;
@@ -113,9 +116,6 @@ a {
  }
  #t1 {
 	top: -45vw;
- }
- #t3 {
-	top: -36vw;
  }
  .fade-in {
 	 opacity: 1;
