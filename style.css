@@ -114,6 +114,9 @@ a {
  #t1 {
 	top: -45vw;
  }
+ #t3 {
+	top: -35vw;
+ }
  .fade-in {
 	 opacity: 1;
 	 transform: translateY(0);
