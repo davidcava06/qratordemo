@@ -83,6 +83,11 @@ a {
 	z-index: -1;
 	text-align: center;
  }
+
+ .vimeo-wrapper {
+	position: relative;
+	z-index: 0;
+ }
  .vimeo-wrapper iframe {
 	width: 100vw;
 	height: 56.25vw;  /*Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
@@ -94,3 +99,36 @@ a {
 	left: 50%;
 	transform: translate(-50%, -50%);
  }
+
+/* Sliding text formatting */
+ .content-wrapper {
+	position: relative;
+	text-align: right;
+	opacity: 0;
+	top: -40vw;
+	/* right: -20vw; */
+	transform: translateY(1.5vw);
+	transition: all 1s ease-out;
+	z-index: 2;
+ }
+ #t1 {
+	top: -45vw;
+ }
+ .fade-in {
+	 opacity: 1;
+	 transform: translateY(0);
+ }
+ .content-wrapper h1 {
+	letter-spacing: 0vw;
+	text-transform: uppercase;
+	font-size: 7vw;
+	margin-top: 0vw;
+	margin-bottom: 0vw;
+ }
+ .content-wrapper p {
+	opacity: 1;
+	transform: translateY(0);
+	letter-spacing: 0.3vw;
+	text-transform: uppercase;
+	margin-top: -0.5vw;
+}
