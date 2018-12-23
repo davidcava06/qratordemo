@@ -22,5 +22,11 @@ $(document).ready(function() {
     .setClassToggle('#t3', 'fade-in')
     // .addIndicators() // for debugging
     .addTo(controller);
-    
+
+    var scene4 = new ScrollMagic.Scene({
+        triggerElement: '#s3'
+    })
+    .setClassToggle('#scroller', 'fade-out')
+    .addIndicators() // for debugging
+    .addTo(controller);
 });
