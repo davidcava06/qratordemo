@@ -139,7 +139,7 @@ a {
 /* Scroll down */
 .scroll-wrapper {
     position: absolute;
-    bottom: 1vw;
+    bottom: 1.5vw;
     width: 100%;
 	text-align: center;
 	z-index: 100;
