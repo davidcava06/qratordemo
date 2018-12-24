@@ -27,6 +27,6 @@ $(document).ready(function() {
         triggerElement: '#s3'
     })
     .setClassToggle('#scroller', 'fade-out')
-    .addIndicators() // for debugging
+    // .addIndicators() // for debugging
     .addTo(controller);
 });

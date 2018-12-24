@@ -11,7 +11,7 @@ jQuery(document).ready(function() {
         if (scrollPos >= navOffset) {
             jQuery(".scroll-wrapper").addClass("fixedbottom");
         } else {
-            jQuery(".scroll-wrapper").removeClass("fixedbottom");
+            jQuery(".scroll-wrapper").removeClass("fade-out");
         }
     })
     
